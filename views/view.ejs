@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/views.css" type="text/css"/>
+    <script src="https://kit.fontawesome.com/0f66109f5d.js" crossorigin="anonymous"></script>
+    <style>
+    html {
+    background: url("https://media.timeout.com/images/105649106/image.jpg") fixed no-repeat center;
+    }
+
+    .weatherContainer {
+        color:#FFF;
+        text-align:center;
+        height:410px;
+        width:410px;
+        margin-left:820px;
+        border-radius:6px;
+        background-color:rgba(173,173,173,0.43);
+        border-bottom: 1px solid gray;
+        box-shadow: -3px -6px  -20px -20px -7px;
+    }
+    .windContainer {
+        justify-content:space-between;
+        display:flex;
+    }
+
+    h1 {
+      font-size: 45px;
+    }
+    #wind-speed {
+        margin-left:12px;
+        font-size:15px;
+        color:white;
+    }
+
+    #wind-temperature {
+        margin-right:20px;
+        font-size:15px;
+        color:white;
+
+    }
+
+    #humidity {
+        margin-right:20px;
+        font-size:15px;
+        color:white;
+
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="weatherContainer">
+    <h2><span><img src="<%=image%>"</img></span>Chicago</h2>
+      <h1><%=temperature%>°F</h1>
+    <p><%=description%></p>
+    <p>_________________________________</p>
+    <div class="windContainer">
+        <div id="wind-speed">Wind Speed
+          <i class="fas fa-wind"></i>
+        <p><%=windSpeed%> mph</p>
+        </div>
+        <div id="wind-temperature">Wind Temperature
+          <i class="fas fa-thermometer-quarter"></i>
+        <p><%=windTemperature%>°F</p>
+        </div>
+        <div id="humidity">Humidity
+          <i class="fas fa-tint"></i>
+        <p><%=humidity%>%</p>
+        </div>
+    </div>
+</div>
+  </body>
+</html>
