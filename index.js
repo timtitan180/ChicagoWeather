@@ -6,7 +6,7 @@ const path = require('path');
 
 
 app.use(express.static(path.join(__dirname,'views')));
-const port = 7622;
+const port = process.env.PORT || 7622;
 
 app.set('view engine','ejs');
 
