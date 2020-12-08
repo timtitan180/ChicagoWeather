@@ -1,0 +1,24 @@
+{
+  "name": "chicagoweather",
+  "version": "1.0.0",
+  "description": " Getting Weather using an API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timtitan180/ChicagoWeather.git"
+  },
+  "author": "Timothy Tudosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timtitan180/ChicagoWeather/issues"
+  },
+  "homepage": "https://github.com/timtitan180/ChicagoWeather#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "https": "^1.0.0"
+  }
+}
