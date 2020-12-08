@@ -1,0 +1,36 @@
+html {
+background-image: url("https://media.timeout.com/images/105649106/image.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.weatherContainer {
+    color:#FFF;
+    text-align:center;
+    height:210px;
+    width:210px;
+    margin-left:620px;
+    border-radius:6px;
+    background-color:rgba(173,173,173,0.6);
+}
+.windContainer {
+    justify-content:space-between;
+    display:flex;
+}
+
+h1 {
+  font-size: 45px;
+}
+#wind-speed {
+    margin-left:12px;
+    font-size:10px;
+    color:white;
+}
+
+#wind-temperature {
+    margin-right:20px;
+    font-size:10px;
+    color:white;
+
+}
