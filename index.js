@@ -15,8 +15,9 @@ app.use(express.static(path.join(__dirname,"public")));
 
 
 const convertToFahrenheit = (temperature) => {
-      return 9/5 * (temperature - 273)+ 32;//formula to automate conversion of temperatures from Kelvin to Fahrenheit(The USA way!)
-}
+      return Math.round(9/5 * (temperature - 273)+ 32);//formula to automate conversion of temperatures from Kelvin to Fahrenheit(The USA way!)
+
+    }
 
 app.get('/',(req,res)=>{
       https.get('https://api.openweathermap.org/data/2.5/weather?q=Chicago&appid=fd46c79dc6499d0f5dbe1742d3c16495',response=>{
