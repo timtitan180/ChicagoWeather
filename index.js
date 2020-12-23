@@ -14,7 +14,7 @@ app.use(express.static(path.join(__dirname,"public")));
 
 
 convertToFahrenheit = (temperature) => {
-      return (temperature - temperature) * 9/5 + 32;
+      return (temperature - temperature) * 9/5 + 32;//formula to automate conversion of temperatures from Kelvin to Fahrenheit(The USA way!)
 }
 
 app.get('/',(req,res)=>{
